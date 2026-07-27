@@ -1,0 +1,111 @@
+Git Commands
+
+SETUP
+ Configuring user information used across all local repositories
+ git config --global user.name “[firstname lastname]”
+
+ set a name that is identifiable for credit when review version history
+ git config --global user.email “[valid-email]
+
+
+whenever start the git   
+
+git clone https://worklow.git
+
+git add --all
+
+git commit -m "some msg"
+
+git push origin -U main
+
+git pull origin main
+
+
+whenever create branch
+
+git branch branch_name //create the branch
+
+git checkout branch_name // whenever we go to the branch
+
+git push origin branch_name //push the code into brancg
+
+git pull origin branch_name //pull the code into branch
+
+git merge branch_name
+
+
+
+whenever when we get conflicts how to work  whenever had changes in to localrepo and also you pull the code from main
+
+git status
+
+git stash          # or commit your changes
+
+git pull origin main
+
+git stash pop      # if you used stash
+
+# resolve conflicts if any
+git add .
+
+git commit -m "Resolved conflicts"
+
+---
+
+
+When i see the git stash details in our local for example files
+
+git stash pop
+
+
+ git rebase [branch]
+ apply any commits of current branch ahead of specified one
+
+
+
+Two developers (let's say Alice and Bob) are working on the same branch (e.g., feature-branch).
+
+Alice pushes her changes first to the remote.
+
+Bob has not pulled Alice's changes yet, and he commits his own local changes.
+
+When Bob tries to push, Git blocks it because his local branch is behind the remote.
+
+###First Method
+git pull origin feature branch
+#it see the merge conflicts to resolve the conflicts of the merge after that add the code into git as usual
+git add.
+git commit
+git push
+
+####There is another method
+
+git pull --rebase origin feature-branch
+If resolve any conflicts.
+
+
+### Git Rebase
+
+Git Rebase — Moving Your Work on Top of Another Branch
+Rebase re-applies your commits on top of another branch, creating new commits (with new IDs).
+
+
+### Revert the changes to the before commits
+git reset Head ~1 #To revert the c
+git push origin main --force #force fully commit the revert changes 
+
+
+
+### whenever clone the repositorary another one.It gave the access to the repo but still it shows the not found
+https://github.com/tejaamere/OpsbridgeLean.git
+git clone https://sahithisugavasi@github.com/tejaamere/OpsbridgeLean.git
+
+https://sahithiroy@github.com/Kusumareddy0896/AgentIQ.git
+
+Teja_Amere
+
+git remote set-url origin https://sahithisugavasi@github.com/saiteja-cf/opsbridge.git
+
+git clone https://sahithiroy@github.com/martalasaikiran/test
+
+git clone https://sahithisugavasi@github.com/OpsbridgeLean.git
